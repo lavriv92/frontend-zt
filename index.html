@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Frontentzt</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/beige.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? 'css/print/pdf.css'
+        : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h3>
+            Why do we need standards for software development and where to find
+            them​
+          </h3>
+
+          <div>@ilavriv</div>
+        </section>
+        <section>
+          <h3>Whoami</h3>
+
+          <section>
+            <ul>
+              <li><strong>Facebook:</strong> ivan.lavriv</li>
+              <li><strong>GitHub</strong> lavriv92</li>
+              <li><strong>Competence Lead / Pre Sales Engineer:</strong> Perfectial</li>
+              <li><strong>Lecturer: </strong> LITS</li>
+            </ul>
+          </section>
+
+          <section>
+            <img src="./lib/img/1978_oooo.plus.png" width="400" />
+          </section>
+
+          <section>
+            <img src="./lib/img/hutirky.jpg" alt="">
+          </section>
+        </section>
+        <section>
+          <h3>Technologies which i use</h3>
+
+          <ul>
+            <div style="float: left; width: 30%">
+              <li>Python</li>
+              <li>Ruby</li>
+              <li>JS</li>
+              <li>Ruby</li>
+            </div>
+            <div style="float: right; width: 30%">
+              <li>Golang</li>
+              <li>Java</li>
+              <li>PHP</li>
+              <li>Rust</li>
+            </div>
+          </ul>
+        </section>
+        <section>
+          <h4>How engineers works</h4>
+
+
+          <ul>
+            <li>Standarts</li>
+            <li>Specifications</li>
+          </ul>
+        </section>
+        <section>
+          <h4>How we work?</h4>
+
+          <ul>
+            <li>IT trends</li>
+            <li>RDD ;)</li>
+            <li>Working with new libraries</li>
+            <li>Discussions about technologies</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Typical development process</h3>
+
+          <ul>
+            <li>Aglie practices</li>
+            <li>Changes during development</li>
+            <li>Unstable stage of product</li>
+            <li>Chaos</li>
+          </ul>
+        </section>
+        <section>
+          <h3>How we can improove our engineering skills?</h3>
+
+          <ul>
+            <li>Standarts</li>
+            <li>Specifications</li>
+          </ul>
+        </section>
+        <section>
+          <h3>How we should work?</h3>
+
+          <ul class="data-autoslide">
+            <li class="fragment">Language specifications</li>
+            <li class="fragment">Frameworks best practices</li>
+            <li class="fragment">Web standarts</li>
+            <li class="fragment">Full cycle development standarts</li>
+            <li class="fragment">Achitecture approach standarts</li>
+            <li class="fragment">Domain industry standarts</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Standarts and specifications providers</h4>
+
+          <ul>
+            <li>Communities</li>
+            <li>Comitets</li>
+            <li>Standart organizations (ECMA / ISO)</li>
+          </ul>
+        </section>
+        <section>
+          
+            <a
+              href="https://www.ecma-international.org/publications/standards/Ecma-262.htm"
+>
+              <h3>ECMA - 262</h3>
+
+    
+            </a>
+          
+          <div><img src="./ecma.png" alt=""></div>
+         
+        </section>
+        <section>
+            <h4>ECMA - example</h4>
+
+            <section data-markdown>
+              ```js
+              function* generatePreviousMonthsDates(month, year, count) {
+                for (let i = 0; i < count; i++) {
+                    yield new Date(year, month - i, 1);
+                }
+              }
+              ```
+            </section>
+        </section>
+        <section>
+          <a href="https://isocpp.org/std/the-standard">
+            <h3>C++ ISO standart</h3>
+          </a>
+
+          <div><img src="./cpp.png" alt=""></div>
+        </section>
+        <section>
+          <h3>W3C</h3>
+
+          <ul class="data-autoslide">
+            
+            <li class="fragment">Web Design and Applications</li>
+            <li class="fragment">Web of Devices</li>
+            <li class="fragment">Web Architecture</li>
+            <li class="fragment">Semantic Web</li>
+            <li class="fragment">XML Technology</li>
+            <li class="fragment">Web of Services</li>
+            <li class="fragment">Browsers and Authoring Tools</li>
+          </ul>
+        </section>
+        <section>
+          <h3>WICG</h3>
+
+          <p>Working group for Web APIs</p>
+        </section>
+        <section>
+          <h4>Web API examples</h4>
+
+          <section data-markdown>
+            ```js
+            selectRecipientsButton.addEventListener('click', async () => {
+              const contacts = await navigator.contacts.select([
+              'name',
+              'email'
+              ], { 
+                multiple: true
+              });
+                
+              if (!contacts.length) {
+                return;
+              }
+              
+              populateRecipients(contacts);
+            });
+            ```
+          </section>
+        </section>
+        <section>
+            <h4>Web API examples 2</h4>
+
+            <section data-markdown>
+              ```js
+              navigator.serviceWorker.ready.then(registration => {
+                registration.periodicSync.register('get-latest-news', {
+                  minInterval: 24 * 60 * 60 * 1000,
+                });
+              });
+              ```
+            </section>
+        </section>
+        <section>
+          <h3>What about data?</h3>
+        </section>
+        <section>
+          <h3>Schema.org</h3>
+
+          <div><img src="./schema.png" alt=""></div>
+        </section>
+        <section>
+          <h3>Schema org - bad practice</h3>
+
+          <div><img src="./rails.png" alt=""></div>
+        </section>
+        <section>
+          <h3>Schema.org - JSON - LD</h3>
+
+          <section data-markdown>
+            ```json
+            {
+              "@context": "http://schema.org",
+              "@type": "Restaurant",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Sunnyvale",
+                "addressRegion": "CA",
+                "postalCode": "94086",
+                "streetAddress": "1901 Lemur Ave"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4",
+                "reviewCount": "250"
+              },
+              "name": "GreatFood",
+              "openingHours": [
+                "Mo-Sa 11:00-14:30",
+                "Mo-Th 17:00-21:30",
+                "Fr-Sa 17:00-22:00"
+              ],
+              "priceRange": "$$",
+              "servesCuisine": [
+                "Middle Eastern",
+                "Mediterranean"
+              ],
+              "telephone": "(408) 714-1489",
+              "url": "http://www.greatfood.com"
+            }
+            ```
+          </section>
+        </section>
+        <section>
+          <h3>JSON Schema</h3>
+
+          <div>div</div>
+        </section>
+        <section>
+          <h3>Architecture standarts</h3>
+        </section>
+        <section>
+          <a
+            href="http://blogs.plymouth.ac.uk/strategyandarchitecture/enterprise-architecture-with-plymouth-university/plymouth-university-architecture-repository-2/enterprise-architecture-principles/"
+            ><h3>18 principles of architecture</h3></a
+          >
+
+          <ul class="data-autoslide">
+            <li class="fragment">Business principles</li>
+            <li class="fragment">Data principles</li>
+            <li class="fragment">Application principles</li>
+            <li class="fragment">Technology principles</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Technology principles</h3>
+
+          <ul class="data-autoslide">
+            <li class="fragment">Requirements-Based Change</li>
+            <li class="fragment">Control Technical Diversity</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Data principles</h3>
+
+          <ul class="data-autoslide">
+              <li class="fragment">Data Security</li>
+              <li class="fragment">Data is an Asset</li>
+              <li class="fragment">Data is Shared</li>
+              <li class="fragment">Data is Accessible</li>
+              <li class="fragment">Data Trustee</li>
+              <li class="fragment">Data will be Analysable</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>More</h3>
+        </section>
+
+        <section>
+          <h3>SE 2004</h3>
+
+          <div><img src="./se2004.png" alt=""></div>
+        </section>
+
+        <section>
+          <h3>SWEBOK</h3>
+
+          <div><img src="./swebok.png" alt=""></div>
+        </section>
+        <section>
+          <h3>SWEBOK objectives</h3>
+
+          <ul class="data-autoslide">
+            <li class="fragment">Requirements</li>
+            <li class="fragment">Software development</li>
+            <li class="fragment">Development knowledge</li>
+            <li class="fragment">Testing</li>
+            <li class="fragment">Education</li>
+            <li class="fragment">.....</li>
+          </ul>
+
+          <aside class="notes">
+            Всіх є 15 принципів ( розробка фінансовий менеджмент )
+
+            https://www.computer.org/education/bodies-of-knowledge/software-engineering/topics
+          </aside>
+        </section>
+        <section>
+          <h3>Any questions?</h3>
+
+          <div><img src="./surge.png" alt=""></div>
+        </section>
+
+        <section>
+          <h2>Thank you</h2>
+
+          
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, theme: 'github' }
+        ]
+      });
+
+      Reveal.configure({
+        slideNumber: true
+      });
+    </script>
+  </body>
+</html>
